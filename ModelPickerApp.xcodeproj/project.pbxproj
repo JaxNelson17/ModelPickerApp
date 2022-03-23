@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A393D86827EBC9BF008CDF93 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A393D86727EBC9BF008CDF93 /* Model.swift */; };
+		A393D86B27EBCD38008CDF93 /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = A393D86A27EBCD38008CDF93 /* FocusEntity */; };
+		A393D86E27EBCF41008CDF93 /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A393D86D27EBCF41008CDF93 /* FocusARView.swift */; };
+		A393D87027EBCF69008CDF93 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A393D86F27EBCF69008CDF93 /* ModelPickerView.swift */; };
+		A393D87227EBCF8F008CDF93 /* PlacementButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A393D87127EBCF8F008CDF93 /* PlacementButtonView.swift */; };
 		A3C755E927EBA97E00B456F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C755E827EBA97E00B456F8 /* AppDelegate.swift */; };
 		A3C755EB27EBA97E00B456F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C755EA27EBA97E00B456F8 /* ContentView.swift */; };
 		A3C755ED27EBA97E00B456F8 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = A3C755EC27EBA97E00B456F8 /* Experience.rcproject */; };
@@ -39,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A393D86727EBC9BF008CDF93 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A393D86D27EBCF41008CDF93 /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
+		A393D86F27EBCF69008CDF93 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		A393D87127EBCF8F008CDF93 /* PlacementButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonView.swift; sourceTree = "<group>"; };
 		A3C755E527EBA97E00B456F8 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3C755E827EBA97E00B456F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3C755EA27EBA97E00B456F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A393D86B27EBCD38008CDF93 /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +91,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A393D86C27EBCF31008CDF93 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A393D86D27EBCF41008CDF93 /* FocusARView.swift */,
+				A393D86F27EBCF69008CDF93 /* ModelPickerView.swift */,
+				A393D87127EBCF8F008CDF93 /* PlacementButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		A3C755DC27EBA97E00B456F8 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +127,8 @@
 				A3C755E827EBA97E00B456F8 /* AppDelegate.swift */,
 				A3C7561427EBAA4300B456F8 /* Models */,
 				A3C755EA27EBA97E00B456F8 /* ContentView.swift */,
+				A393D86727EBC9BF008CDF93 /* Model.swift */,
+				A393D86C27EBCF31008CDF93 /* Views */,
 				A3C755EC27EBA97E00B456F8 /* Experience.rcproject */,
 				A3C755EE27EBA97F00B456F8 /* Assets.xcassets */,
 				A3C755F027EBA97F00B456F8 /* Preview Content */,
@@ -166,6 +188,9 @@
 			dependencies = (
 			);
 			name = ModelPickerApp;
+			packageProductDependencies = (
+				A393D86A27EBCD38008CDF93 /* FocusEntity */,
+			);
 			productName = ModelPickerApp;
 			productReference = A3C755E527EBA97E00B456F8 /* ModelPickerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -238,6 +263,9 @@
 				Base,
 			);
 			mainGroup = A3C755DC27EBA97E00B456F8;
+			packageReferences = (
+				A393D86927EBCD38008CDF93 /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = A3C755E627EBA97E00B456F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -285,8 +313,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3C755EB27EBA97E00B456F8 /* ContentView.swift in Sources */,
+				A393D86E27EBCF41008CDF93 /* FocusARView.swift in Sources */,
+				A393D87227EBCF8F008CDF93 /* PlacementButtonView.swift in Sources */,
+				A393D87027EBCF69008CDF93 /* ModelPickerView.swift in Sources */,
 				A3C755E927EBA97E00B456F8 /* AppDelegate.swift in Sources */,
 				A3C755ED27EBA97E00B456F8 /* Experience.rcproject in Sources */,
+				A393D86827EBC9BF008CDF93 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A393D86927EBCD38008CDF93 /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A393D86A27EBCD38008CDF93 /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A393D86927EBCD38008CDF93 /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A3C755DD27EBA97E00B456F8 /* Project object */;
 }
